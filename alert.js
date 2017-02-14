@@ -1,9 +1,19 @@
 'use strict';
-var numbers = prompt('Напишите числовое значение', '');
-if (numbers < 0) {
-	alert ('-1');
-} else if (numbers > 0) {
-	alert ('1');
+var username = prompt('Введите логин', '');
+if (username == null) {
+	alert('Вход отменен');
+} else if (username == 'Админ') {
+	
+	 var password = prompt('Пароль?', '');
+ if (password == null) {
+	 alert('Вход отменен');
+ } else if (password == 'Черный Властелин') {
+	 alert('Добро пожаловать!');
+ } else {
+	 alert('Пароль неверен')
+ }
+	
+
 } else {
-	alert ('0')
+	alert('Я вас не знаю')
 }
