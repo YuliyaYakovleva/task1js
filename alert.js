@@ -1,4 +1,3 @@
-var admin, name;
-name = "Василий";
-admin = name; //скопировали значение
-alert (admin)
+'use strict';
+var firstname = prompt('Введите ваше имя', 'Александра');
+alert('Ваше имя ' + firstname)
