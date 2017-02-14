@@ -1,3 +1,7 @@
 'use strict';
-var firstname = prompt('Введите ваше имя', 'Александра');
-alert('Ваше имя ' + firstname)
+var ofname = prompt('Каково «официальное» название JavaScript?', '');
+if (ofname == 'ECMAScript') {
+	alert ('Верно!');
+} else {
+	alert ('Не знаете? «ECMAScript»!')
+}
