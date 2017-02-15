@@ -1,6 +1,5 @@
-var a, b;
-
-a = +prompt ('Введите число a', '');
-b = +prompt ('Введите число b', '');
-
-result = ( a + b < 4) ? confirm('Мало') : confirm('Много');
+var login = prompt ('Логин', '');
+var message = ( login == 'Вася' ) ? confirm('Привет') : 
+	( login == 'Директор' ) ? confirm('Здравствуйте') : 
+	( login == '') ? confirm('Нет логина') : 
+	confirm('');
