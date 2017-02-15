@@ -1,8 +1,22 @@
 'use strict';
-var a, b;
-metka: for ( a = 2; a < 10;  a++) {
-	for ( b = 2; b < a; b++) {
-		if ( a % b == 0) continue metka;
-	}
-alert (a);
+function checkAge(age) {
+	return (age > 18) ? true : confirm('Родители разрешили?'); //через ?
+}
+
+function checkAge2(age) {
+	return (age > 18) || confirm('Родители разрешили?'); //через ||
+}
+
+var age = prompt ('Ваш возраст?', '')
+	
+if (checkAge(age)) {
+  alert( 'Доступ разрешен' );
+} else {
+  alert( 'В доступе отказано' );
+}
+
+if (checkAge2(age)) {
+  alert( 'Доступ разрешен' );
+} else {
+  alert( 'В доступе отказано' );
 }
