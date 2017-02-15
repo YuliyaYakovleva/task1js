@@ -1,22 +1,14 @@
 'use strict';
-function checkAge(age) {
-	return (age > 18) ? true : confirm('Родители разрешили?'); //через ?
+var a,b;
+function compNumb(a, b) {
+	if ( a > b ) {
+		return b;
+		} else {
+			return a;
+		}
 }
 
-function checkAge2(age) {
-	return (age > 18) || confirm('Родители разрешили?'); //через ||
-}
+a = prompt('Цифра a', '');
+b = prompt('Цифра b', '');
 
-var age = prompt ('Ваш возраст?', '')
-	
-if (checkAge(age)) {
-  alert( 'Доступ разрешен' );
-} else {
-  alert( 'В доступе отказано' );
-}
-
-if (checkAge2(age)) {
-  alert( 'Доступ разрешен' );
-} else {
-  alert( 'В доступе отказано' );
-}
+alert(compNumb(a, b));
