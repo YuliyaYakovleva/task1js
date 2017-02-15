@@ -1,4 +1,8 @@
 'use strict';
-do {
-	var num = prompt ('Введите число больше 100', '');
-} while (num != null && num <= 100);
+var a, b;
+metka: for ( a = 2; a < 10;  a++) {
+	for ( b = 2; b < a; b++) {
+		if ( a % b == 0) continue metka;
+	}
+alert (a);
+}
