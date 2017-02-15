@@ -1,14 +1,17 @@
-'use strict';
-var a,b;
-function compNumb(a, b) {
-	if ( a > b ) {
-		return b;
-		} else {
-			return a;
-		}
+function pow(x,n) {
+	var result = x;
+for (var a = 1; a < n; a++) // Повторение n раз
+{
+	result = result * x;
+}
+return result;
 }
 
-a = prompt('Цифра a', '');
-b = prompt('Цифра b', '');
+x = +prompt ('Введите число', '');
+n = +prompt ('Введите степень', '');
 
-alert(compNumb(a, b));
+if (n<=1) {
+	alert ('Введите правильно степень')
+} else {
+	alert (pow(x, n));
+}
