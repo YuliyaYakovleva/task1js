@@ -1,17 +1,6 @@
-function pow(x,n) {
-	var result = x;
-for (var a = 1; a < n; a++) // Повторение n раз
-{
-	result = result * x;
-}
-return result;
-}
+var a, b;
 
-x = +prompt ('Введите число', '');
-n = +prompt ('Введите степень', '');
+a = +prompt ('Введите число a', '');
+b = +prompt ('Введите число b', '');
 
-if (n<=1) {
-	alert ('Введите правильно степень')
-} else {
-	alert (pow(x, n));
-}
+result = ( a + b < 4) ? confirm('Мало') : confirm('Много');
