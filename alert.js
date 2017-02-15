@@ -1,19 +1,6 @@
 'use strict';
-var username = prompt('Введите логин', '');
-if (username == null) {
-	alert('Вход отменен');
-} else if (username == 'Админ') {
-	
-	 var password = prompt('Пароль?', '');
- if (password == null) {
-	 alert('Вход отменен');
- } else if (password == 'Черный Властелин') {
-	 alert('Добро пожаловать!');
- } else {
-	 alert('Пароль неверен')
- }
-	
-
-} else {
-	alert('Я вас не знаю')
+for (var a = 2; a <= 10; a++) {
+	if ( a % 2 == 0) {
+		alert ( a );
+	}
 }
